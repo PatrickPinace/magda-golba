@@ -1,7 +1,7 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import Navigation from '../components/Navigation.astro';
-import Footer from '../components/Footer.astro';
+import Layout from "../layouts/Layout.astro";
+import Navigation from "../components/Navigation.astro";
+import Footer from "../components/Footer.astro";
 
 const base = import.meta.env.BASE_URL;
 ---
@@ -10,7 +10,9 @@ const base = import.meta.env.BASE_URL;
   <Navigation />
 
   <!-- Hero Section -->
-  <section class="pt-24 pb-16 bg-gradient-to-br from-blue-50 to-indigo-100 min-h-screen flex items-center">
+  <section
+    class="pt-24 pb-16 bg-gradient-to-br from-blue-50 to-indigo-100 min-h-screen flex items-center"
+  >
     <div class="container mx-auto px-4">
       <div class="grid md:grid-cols-2 gap-12 items-center">
         <div>
@@ -19,28 +21,49 @@ const base = import.meta.env.BASE_URL;
           </h1>
           <p class="text-2xl text-gray-700 mb-4">Lekarz dentysta</p>
           <p class="text-lg text-gray-600 mb-8">
-            Leczenie ortodontyczne dzieci oraz dorosłych. Aparaty stałe, ruchome oraz alignery.
+            Leczenie ortodontyczne dzieci oraz dorosłych. Aparaty stałe, ruchome
+            oraz alignery.
           </p>
           <div class="flex flex-wrap gap-4">
-            <a href="#kontakt" class="bg-blue-600 text-white px-8 py-3 rounded-lg hover:bg-blue-700 transition-colors duration-300">
+            <a
+              href="#kontakt"
+              class="bg-blue-600 text-white px-8 py-3 rounded-lg hover:bg-blue-700 transition-colors duration-300"
+            >
               Umów wizytę
             </a>
-            <a href="#o-mnie" class="border-2 border-blue-600 text-blue-600 px-8 py-3 rounded-lg hover:bg-blue-600 hover:text-white transition-all duration-300">
+            <a
+              href="#o-mnie"
+              class="border-2 border-blue-600 text-blue-600 px-8 py-3 rounded-lg hover:bg-blue-600 hover:text-white transition-all duration-300"
+            >
               Dowiedz się więcej
             </a>
           </div>
 
           <!-- Social Links -->
           <div class="flex gap-4 mt-6">
-            <a href="https://www.instagram.com/dr_justyna_serafin/" target="_blank" rel="noopener noreferrer" class="flex items-center gap-2 text-gray-600 hover:text-pink-600 transition-colors">
+            <a
+              href="https://www.instagram.com/dr_justyna_serafin/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="flex items-center gap-2 text-gray-600 hover:text-pink-600 transition-colors"
+            >
               <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
-                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                <path
+                  d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"
+                ></path>
               </svg>
               <span class="text-sm font-medium">Instagram</span>
             </a>
-            <a href="https://www.znanylekarz.pl/justyna-serafin/stomatolog-stomatolog-dzieciecy/debica" target="_blank" rel="noopener noreferrer" class="flex items-center gap-2 text-gray-600 hover:text-teal-600 transition-colors">
+            <a
+              href="https://www.znanylekarz.pl/justyna-serafin/stomatolog-stomatolog-dzieciecy/debica"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="flex items-center gap-2 text-gray-600 hover:text-teal-600 transition-colors"
+            >
               <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
-                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/>
+                <path
+                  d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"
+                ></path>
               </svg>
               <span class="text-sm font-medium">ZnanyLekarz</span>
             </a>
@@ -63,171 +86,303 @@ const base = import.meta.env.BASE_URL;
   <section id="o-mnie" class="py-20 bg-white">
     <div class="container mx-auto px-4">
       <div class="max-w-4xl mx-auto">
-        <h2 class="text-4xl font-bold text-center mb-12 text-gray-900">O mnie</h2>
+        <h2 class="text-4xl font-bold text-center mb-12 text-gray-900">
+          O mnie
+        </h2>
 
         <div class="space-y-6 text-gray-700 leading-relaxed">
           <p class="text-lg">
-            Zajmuję się leczeniem ortodontycznym dzieci oraz dorosłych. W swojej pracy wykorzystuję
-            aparaty stałe, ruchome oraz alignery - aparaty nakładkowe.
+            Zajmuję się leczeniem ortodontycznym dzieci oraz dorosłych. W swojej
+            pracy wykorzystuję aparaty stałe, ruchome oraz alignery - aparaty
+            nakładkowe.
           </p>
 
           <p class="text-lg">
-            <strong class="text-gray-900">Moją ulubioną dziedziną stomatologii jest ortodoncja dziecięca.</strong>
+            <strong class="text-gray-900"
+              >Moją ulubioną dziedziną stomatologii jest ortodoncja dziecięca.</strong
+            >
           </p>
 
           <p class="text-lg">
-            Ukończyłam studia na Uniwersytecie Medycznym w Lublinie. Podczas studiów zostałam
-            nagrodzona stypendium Rektora za osiągnięcia naukowe. Doświadczenie zdobywałam pracując
-            w prywatnych gabinetach stomatologicznych.
+            Ukończyłam studia na Uniwersytecie Medycznym w Lublinie. Podczas
+            studiów zostałam nagrodzona stypendium Rektora za osiągnięcia
+            naukowe. Doświadczenie zdobywałam pracując w prywatnych gabinetach
+            stomatologicznych.
           </p>
 
           <p class="text-lg">
-            Nieustannie poszerzam wiedzę z zakresu stomatologii uczestnicząc w szkoleniach i kursach,
-            aby jak najlepiej pomagać pacjentom w zadbaniu o zdrowy i piękny uśmiech. Szkolę się
-            zarówno w ośrodkach polskich, jak i na zagranicznych konferencjach.
-          <p class="text-lg">
+            Nieustannie poszerzam wiedzę z zakresu stomatologii uczestnicząc w
+            szkoleniach i kursach, aby jak najlepiej pomagać pacjentom w
+            zadbaniu o zdrowy i piękny uśmiech. Szkolę się zarówno w ośrodkach
+            polskich, jak i na zagranicznych konferencjach.
+            <p class="text-lg">
+              <p class="text-lg">
+                Już podczas studiów odbyłam praktyki w zagranicznym ośrodku w
+                Tbilisi, co pozwoliło mi spojrzeć na stomatologię z szerszej
+                perspektywy. W swojej praktyce kieruję się indywidualnym
+                podejściem do każdego pacjenta tak, by zapewnić najwyższą jakość
+                leczenia zarówno u dzieci jak i dorosłych.
+              </p>
 
-          <p class="text-lg">
-            Już podczas studiów odbyłam praktyki w zagranicznym ośrodku w Tbilisi, co pozwoliło mi
-            spojrzeć na stomatologię z szerszej perspektywy. W swojej praktyce kieruję się
-            indywidualnym podejściem do każdego pacjenta tak, by zapewnić najwyższą jakość leczenia
-            zarówno u dzieci jak i dorosłych.
-          </p>
-
-          <p class="text-lg">
-            Lubię rozmawiać z pacjentami i chętnie tłumaczę przebieg leczenia. Swoją pracę wykonuję
-            z dużym zaangażowaniem. 
-          </p>
-
+              <p class="text-lg">
+                Lubię rozmawiać z pacjentami i chętnie tłumaczę przebieg
+                leczenia. Swoją pracę wykonuję z dużym zaangażowaniem.
+              </p>
+              <div class="h-6"></div>
+              <!--
           <p class="text-lg">
             Obecnie realizuję program <strong class="text-gray-900">Master of Clinical Orthodontics</strong>,
             stale pogłębiając swoje kompetencje kliniczne w ortodoncji, aby zapewniać Pacjentom
             leczenie na najwyższym poziomie.
           </p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Services Section -->
-  <section id="uslugi" class="py-20 bg-gray-50">
-    <div class="container mx-auto px-4">
-      <h2 class="text-4xl font-bold text-center mb-12 text-gray-900">Usługi</h2>
-
-      <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-        <!-- Service 1 -->
-        <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-300">
-          <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-6">
-            <svg class="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z" />
-            </svg>
-          </div>
-          <h3 class="text-2xl font-bold mb-4 text-gray-900">Ortodoncja dziecięca</h3>
-          <p class="text-gray-600">
-            Specjalistyczne leczenie ortodontyczne dla dzieci z wykorzystaniem
-            nowoczesnych metod i aparatów dostosowanych do najmłodszych pacjentów.
-          </p>
-        </div>
-
-        <!-- Service 2 -->
-        <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-300">
-          <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-6">
-            <svg class="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-            </svg>
-          </div>
-          <h3 class="text-2xl font-bold mb-4 text-gray-900">Aparaty stałe i ruchome</h3>
-          <p class="text-gray-600">
-            Kompleksowe leczenie z użyciem aparatów stałych samoligaturujących oraz
-            różnych typów aparatów ruchomych dostosowanych do indywidualnych potrzeb.
-          </p>
-        </div>
-
-        <!-- Service 3 -->
-        <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-300">
-          <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-6">
-            <svg class="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z" />
-            </svg>
-          </div>
-          <h3 class="text-2xl font-bold mb-4 text-gray-900">Alignery - aparaty nakładkowe</h3>
-          <p class="text-gray-600">
-            Nowoczesne, niemal niewidoczne aparaty nakładkowe - dyskretna alternatywa
-            dla tradycyjnych aparatów ortodontycznych.
+-->
+            </p>
           </p>
         </div>
       </div>
-    </div>
-  </section>
 
-  <!-- Contact Section -->
-  <section id="kontakt" class="py-20 bg-white">
-    <div class="container mx-auto px-4">
-      <h2 class="text-4xl font-bold text-center mb-12 text-gray-900">Kontakt</h2>
+      <!-- Services Section -->
+      <section id="uslugi" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4">
+          <h2 class="text-4xl font-bold text-center mb-12 text-gray-900">
+            Usługi
+          </h2>
 
-      <div class="max-w-2xl mx-auto">
-        <div class="bg-gradient-to-br from-blue-50 to-indigo-50 p-8 rounded-xl shadow-lg">
-          <div class="space-y-6">
-            <div class="flex items-start gap-4">
-              <div class="w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center flex-shrink-0">
-                <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+          <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+            <!-- Service 1 -->
+            <div
+              class="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-300"
+            >
+              <div
+                class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-6"
+              >
+                <svg
+                  class="w-8 h-8 text-blue-600"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"
+                  ></path>
                 </svg>
               </div>
-              <div>
-                <h3 class="text-xl font-bold text-gray-900 mb-2">Email</h3>
-                <a href="mailto:justynadserafin@gmail.com" class="text-blue-600 hover:text-blue-800">
-                  justynadserafin@gmail.com
-                </a>
-              </div>
-            </div>
-
-            <div class="flex items-start gap-4">
-              <div class="w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center flex-shrink-0">
-                <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
-                </svg>
-              </div>
-              <div>
-                <h3 class="text-xl font-bold text-gray-900 mb-2">Telefon</h3>
-                <a href="tel:+48791728349" class="text-blue-600 hover:text-blue-800">
-                  +48 791 728 349
-                </a>
-              </div>
-            </div>
-
-            <div class="flex items-start gap-4">
-              <div class="w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center flex-shrink-0">
-                <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
-                </svg>
-              </div>
-              <div>
-                <h3 class="text-xl font-bold text-gray-900 mb-2">Gabinet</h3>
-                <p class="text-gray-700 mb-1">ul. Wolności 23B lok. 64, Mielec</p>
-                <p class="text-gray-600 text-sm mb-2">Przyjmuję w gabinecie Primadentis</p>
-                <a href="https://primadentis.pl" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:text-blue-800 font-medium">
-                  primadentis.pl →
-                </a>
-              </div>
-            </div>
-
-            <div class="mt-8 pt-8 border-t border-blue-200">
-              <p class="text-center text-gray-700">
-                Umów się na konsultację ortodontyczną i poznaj możliwości leczenia
+              <h3 class="text-2xl font-bold mb-4 text-gray-900">
+                Ortodoncja dziecięca
+              </h3>
+              <p class="text-gray-600">
+                Specjalistyczne leczenie ortodontyczne dla dzieci z
+                wykorzystaniem nowoczesnych metod i aparatów dostosowanych do
+                najmłodszych pacjentów.
               </p>
-              <div class="mt-4 text-center">
-                <a href={`${base}cennik`} class="inline-block bg-blue-600 text-white px-8 py-3 rounded-lg hover:bg-blue-700 transition-colors duration-300">
-                  Zobacz cennik
-                </a>
+            </div>
+
+            <!-- Service 2 -->
+            <div
+              class="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-300"
+            >
+              <div
+                class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-6"
+              >
+                <svg
+                  class="w-8 h-8 text-blue-600"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                </svg>
+              </div>
+              <h3 class="text-2xl font-bold mb-4 text-gray-900">
+                Aparaty stałe i ruchome
+              </h3>
+              <p class="text-gray-600">
+                Kompleksowe leczenie z użyciem aparatów stałych
+                samoligaturujących oraz różnych typów aparatów ruchomych
+                dostosowanych do indywidualnych potrzeb.
+              </p>
+            </div>
+
+            <!-- Service 3 -->
+            <div
+              class="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-300"
+            >
+              <div
+                class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-6"
+              >
+                <svg
+                  class="w-8 h-8 text-blue-600"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"
+                  ></path>
+                </svg>
+              </div>
+              <h3 class="text-2xl font-bold mb-4 text-gray-900">
+                Alignery - aparaty nakładkowe
+              </h3>
+              <p class="text-gray-600">
+                Nowoczesne, niemal niewidoczne aparaty nakładkowe - dyskretna
+                alternatywa dla tradycyjnych aparatów ortodontycznych.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section id="kontakt" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+          <h2 class="text-4xl font-bold text-center mb-12 text-gray-900">
+            Kontakt
+          </h2>
+
+          <div class="max-w-2xl mx-auto">
+            <div
+              class="bg-gradient-to-br from-blue-50 to-indigo-50 p-8 rounded-xl shadow-lg"
+            >
+              <div class="space-y-6">
+                <div class="flex items-start gap-4">
+                  <div
+                    class="w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center flex-shrink-0"
+                  >
+                    <svg
+                      class="w-6 h-6 text-white"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+                      ></path>
+                    </svg>
+                  </div>
+                  <div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">Email</h3>
+                    <a
+                      href="mailto:justynadserafin@gmail.com"
+                      class="text-blue-600 hover:text-blue-800"
+                    >
+                      justynadserafin@gmail.com
+                    </a>
+                  </div>
+                </div>
+
+                <div class="flex items-start gap-4">
+                  <div
+                    class="w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center flex-shrink-0"
+                  >
+                    <svg
+                      class="w-6 h-6 text-white"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
+                      ></path>
+                    </svg>
+                  </div>
+                  <div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">
+                      Telefon
+                    </h3>
+                    <a
+                      href="tel:+48791728349"
+                      class="text-blue-600 hover:text-blue-800"
+                    >
+                      +48 791 728 349
+                    </a>
+                  </div>
+                </div>
+
+                <div class="flex items-start gap-4">
+                  <div
+                    class="w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center flex-shrink-0"
+                  >
+                    <svg
+                      class="w-6 h-6 text-white"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
+                      ></path>
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                    </svg>
+                  </div>
+                  <div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">
+                      Gabinet
+                    </h3>
+                    <a
+                      href="https://www.google.com/maps/search/?api=1&query=ul.+Wolno%C5%9Bci+23B+lok.+64%2C+Mielec"
+                      class="text-blue-600 hover:text-blue-800"
+                    >
+                      ul. Wolności 23B lok. 64, Mielec
+                    </a>
+                    <p class="text-gray-600 text-sm mb-2">
+                      Przyjmuję w gabinecie Primadentis
+                    </p>
+                    <a
+                      href="https://primadentis.pl"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      class="text-blue-600 hover:text-blue-800 font-medium"
+                    >
+                      primadentis.pl →
+                    </a>
+                  </div>
+                </div>
+
+                <div class="mt-8 pt-8 border-t border-blue-200">
+                  <p class="text-center text-gray-700">
+                    Umów się na konsultację ortodontyczną i poznaj możliwości
+                    leczenia
+                  </p>
+                  <div class="mt-4 text-center">
+                    <a
+                      href={`${base}cennik`}
+                      class="inline-block bg-blue-600 text-white px-8 py-3 rounded-lg hover:bg-blue-700 transition-colors duration-300"
+                    >
+                      Zobacz cennik
+                    </a>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </div>
-  </section>
+      </section>
 
-  <Footer />
-</Layout>
+      <Footer />
+    </div>
+  </section></Layout
+>
