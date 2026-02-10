@@ -1,0 +1,80 @@
+---
+interface Props {
+  class?: string;
+}
+
+const { class: className = "" } = Astro.props;
+---
+
+<div class={`magic-card ${className}`}>
+  <div class="magic-card-content">
+    <slot />
+  </div>
+  <div class="magic-card-spotlight"></div>
+</div>
+
+<style>
+  .magic-card {
+    position: relative;
+    padding: 2rem;
+    border-radius: 1.5rem;
+    background: white;
+    box-shadow:
+      0 0 0 1px rgba(244, 63, 94, 0.05),
+      0 10px 25px -5px rgba(244, 63, 94, 0.08),
+      0 4px 6px -2px rgba(244, 63, 94, 0.05);
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    overflow: hidden;
+  }
+
+  .magic-card:hover {
+    transform: translateY(-4px);
+    box-shadow:
+      0 0 0 1px rgba(244, 63, 94, 0.1),
+      0 20px 35px -10px rgba(244, 63, 94, 0.15),
+      0 8px 12px -4px rgba(244, 63, 94, 0.1);
+  }
+
+  .magic-card-content {
+    position: relative;
+    z-index: 2;
+  }
+
+  .magic-card-spotlight {
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(
+      600px circle at var(--mouse-x, 50%) var(--mouse-y, 50%),
+      rgba(251, 207, 232, 0.15),
+      transparent 80%
+    );
+    opacity: 0;
+    transition: opacity 0.4s;
+    pointer-events: none;
+  }
+
+  .magic-card:hover .magic-card-spotlight {
+    opacity: 1;
+  }
+
+  @media (hover: hover) {
+    .magic-card {
+      cursor: pointer;
+    }
+  }
+</style>
+
+<script>
+  const cards = document.querySelectorAll('.magic-card');
+
+  cards.forEach((card) => {
+    card.addEventListener('mousemove', (e) => {
+      const rect = card.getBoundingClientRect();
+      const x = e.clientX - rect.left;
+      const y = e.clientY - rect.top;
+
+      card.style.setProperty('--mouse-x', `${x}px`);
+      card.style.setProperty('--mouse-y', `${y}px`);
+    });
+  });
+</script>

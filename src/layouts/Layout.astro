@@ -6,7 +6,7 @@ interface Props {
   description?: string;
 }
 
-const { title, description = "Justyna Serafin lekarz dentysta" } = Astro.props;
+const { title, description = "Magdalena Golba - Położna, Certyfikowany Doradca Laktacyjny, opieka okołoporodowa" } = Astro.props;
 ---
 
 <!doctype html>
@@ -23,3 +23,140 @@ const { title, description = "Justyna Serafin lekarz dentysta" } = Astro.props;
     <slot />
   </body>
 </html>
+
+<style is:global>
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  /* Animations for hero content */
+  .hero-content > * {
+    animation: fadeInUp 0.8s ease-out backwards;
+  }
+
+  .hero-content > *:nth-child(1) {
+    animation-delay: 0.1s;
+  }
+
+  .hero-content > *:nth-child(2) {
+    animation-delay: 0.2s;
+  }
+
+  .hero-image {
+    animation: fadeIn 1s ease-out 0.3s backwards;
+  }
+
+  /* Services grid animation */
+  .services-grid > * {
+    animation: fadeInUp 0.6s ease-out backwards;
+  }
+
+  .services-grid > *:nth-child(1) {
+    animation-delay: 0.1s;
+  }
+
+  .services-grid > *:nth-child(2) {
+    animation-delay: 0.2s;
+  }
+
+  .services-grid > *:nth-child(3) {
+    animation-delay: 0.3s;
+  }
+
+  /* Testimonials animation */
+  .testimonials-grid > * {
+    animation: fadeInUp 0.6s ease-out backwards;
+  }
+
+  .testimonials-grid > *:nth-child(1) {
+    animation-delay: 0.1s;
+  }
+
+  .testimonials-grid > *:nth-child(2) {
+    animation-delay: 0.2s;
+  }
+
+  .testimonials-grid > *:nth-child(3) {
+    animation-delay: 0.3s;
+  }
+
+  /* Pricing animation */
+  .pricing-grid > * {
+    animation: fadeInUp 0.5s ease-out backwards;
+  }
+
+  .pricing-grid > *:nth-child(1) {
+    animation-delay: 0.05s;
+  }
+
+  .pricing-grid > *:nth-child(2) {
+    animation-delay: 0.1s;
+  }
+
+  .pricing-grid > *:nth-child(3) {
+    animation-delay: 0.15s;
+  }
+
+  .pricing-grid > *:nth-child(4) {
+    animation-delay: 0.2s;
+  }
+
+  /* Smooth transitions */
+  * {
+    scroll-behavior: smooth;
+  }
+
+  /* About section animation */
+  .about-content > * {
+    animation: fadeInUp 0.7s ease-out backwards;
+  }
+
+  .about-content > *:nth-child(1) {
+    animation-delay: 0.1s;
+  }
+
+  .about-content > *:nth-child(2) {
+    animation-delay: 0.2s;
+  }
+
+  .about-content > *:nth-child(3) {
+    animation-delay: 0.3s;
+  }
+
+  .about-content > *:nth-child(4) {
+    animation-delay: 0.4s;
+  }
+
+  .about-content > *:nth-child(5) {
+    animation-delay: 0.5s;
+  }
+
+  .about-content > *:nth-child(6) {
+    animation-delay: 0.6s;
+  }
+
+  /* Improved focus states */
+  a:focus-visible,
+  button:focus-visible {
+    outline: 2px solid rgb(244 63 94 / 0.5);
+    outline-offset: 2px;
+  }
+</style>
