@@ -6,35 +6,35 @@ import Footer from "../components/Footer.astro";
 const base = import.meta.env.BASE_URL;
 ---
 
-<Layout title="Justyna Serafin lekarz dentysta">
+<Layout title="Magdalena Golba - Położna">
   <Navigation />
 
   <!-- Hero Section -->
   <section
     id="start"
-    class="pt-32 pb-16 bg-gradient-to-br from-blue-50 to-indigo-100 min-h-screen flex items-center"
+    class="pt-32 pb-16 bg-gradient-to-br from-rose-50 to-pink-100 min-h-screen flex items-center"
   >
     <div class="container mx-auto px-4">
       <div class="grid md:grid-cols-2 gap-12 items-center">
         <div>
           <h1 class="text-5xl md:text-6xl font-bold text-gray-900 mb-6 text-center md:text-left">
-            Justyna Serafin
+            Magdalena Golba
           </h1>
-          <p class="text-2xl text-gray-700 mb-4 text-center md:text-left">Lekarz dentysta</p>
+          <p class="text-2xl text-gray-700 mb-4 text-center md:text-left">Położna</p>
           <p class="text-lg text-gray-600 mb-8 text-center md:text-left">
-            Leczenie ortodontyczne dzieci oraz dorosłych. Aparaty stałe, ruchome
-            oraz alignery.
+            Certyfikowany Doradca Laktacyjny, Certyfikowany Doradca Noszenia w Chustach.
+            Opieka okołoporodowa, porady laktacyjne, edukacja przedporodowa.
           </p>
           <div class="flex flex-wrap gap-4 justify-center md:justify-start">
             <a
               href="#kontakt"
-              class="bg-blue-600 text-white px-8 py-3 rounded-lg hover:bg-blue-700 transition-colors duration-300"
+              class="bg-rose-500 text-white px-8 py-3 rounded-lg hover:bg-rose-600 transition-colors duration-300"
             >
               Umów wizytę
             </a>
             <a
               href="#o-mnie"
-              class="border-2 border-blue-600 text-blue-600 px-8 py-3 rounded-lg hover:bg-blue-600 hover:text-white transition-all duration-300"
+              class="border-2 border-rose-500 text-rose-600 px-8 py-3 rounded-lg hover:bg-rose-500 hover:text-white transition-all duration-300"
             >
               Dowiedz się więcej
             </a>
@@ -43,7 +43,7 @@ const base = import.meta.env.BASE_URL;
           <!-- Social Links -->
           <div class="flex gap-4 mt-6 justify-center md:justify-start">
             <a
-              href="https://www.instagram.com/dr_justyna_serafin/"
+              href="https://www.instagram.com/m_jak_midwife/"
               target="_blank"
               rel="noopener noreferrer"
               class="flex items-center gap-2 text-gray-600 hover:text-pink-600 transition-colors"
@@ -56,7 +56,20 @@ const base = import.meta.env.BASE_URL;
               <span class="text-sm font-medium">Instagram</span>
             </a>
             <a
-              href="https://www.znanylekarz.pl/justyna-serafin/stomatolog-stomatolog-dzieciecy/debica"
+              href="https://www.facebook.com/magdalena.golba.3/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="flex items-center gap-2 text-gray-600 hover:text-blue-600 transition-colors"
+            >
+              <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                <path
+                  d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"
+                ></path>
+              </svg>
+              <span class="text-sm font-medium">Facebook</span>
+            </a>
+            <a
+              href="https://www.znanylekarz.pl/magdalena-golba/polozna/polaniec"
               target="_blank"
               rel="noopener noreferrer"
               class="flex items-center gap-2 text-gray-600 hover:text-teal-600 transition-colors"
@@ -73,8 +86,8 @@ const base = import.meta.env.BASE_URL;
         <div class="mt-8 md:mt-0">
           <div class="bg-white p-4 rounded-2xl shadow-xl md:mt-20 max-w-md mx-auto md:max-w-none">
             <img
-              src={`${base}JustynaSsm.png`}
-              alt="Justyna Serafin lekarz dentysta"
+              src={`${base}magda-golba.jpg`}
+              alt="Magdalena Golba - Położna"
               class="w-full h-auto rounded-xl object-cover"
             />
           </div>
@@ -93,55 +106,38 @@ const base = import.meta.env.BASE_URL;
 
         <div class="space-y-6 text-gray-700 leading-relaxed text-justify">
           <p class="text-lg">
-            Zajmuję się leczeniem ortodontycznym dzieci oraz dorosłych. W swojej
-            pracy wykorzystuję aparaty stałe, ruchome oraz alignery - aparaty
-            nakładkowe.
+            Jestem położną z pasją do swojej pracy. Towarzyszę kobietom w jednym z najważniejszych
+            okresów ich życia - od ciąży, przez poród, po pierwsze miesiące macierzyństwa.
           </p>
 
           <p class="text-lg text-center md:text-left">
-            <strong class="text-gray-900"
-              >Moją ulubioną dziedziną stomatologii jest ortodoncja dziecięca.</strong>
+            <strong class="text-gray-900">
+              Moją misją jest wspieranie kobiet i rodzin w naturalnym, bezpiecznym podejściu do macierzyństwa.
+            </strong>
           </p>
 
           <p class="text-lg">
-            Ukończyłam studia na Uniwersytecie Medycznym w Lublinie. Podczas
-            studiów zostałam nagrodzona stypendium Rektora za osiągnięcia
-            naukowe. Doświadczenie zdobywałam pracując w prywatnych gabinetach
-            stomatologicznych.
+            W swojej pracy łączę wiedzę medyczną z indywidualnym podejściem do każdej pacjentki.
+            Jestem <strong>Certyfikowanym Doradcą Laktacyjnym</strong> oraz
+            <strong>Certyfikowanym Doradcą Noszenia w Chustach</strong>, co pozwala mi kompleksowo
+            wspierać młode mamy w pierwszych tygodniach i miesiącach życia ich dzieci.
           </p>
 
           <p class="text-lg">
-            Nieustannie poszerzam wiedzę z zakresu stomatologii uczestnicząc w
-            szkoleniach i kursach, aby jak najlepiej pomagać pacjentom w
-            zadbaniu o zdrowy i piękny uśmiech. Szkolę się zarówno w ośrodkach
-            polskich, jak i na zagranicznych konferencjach.
-            <p class="text-lg">
-              <p class="text-lg">
-                Już podczas studiów odbyłam praktyki w zagranicznym ośrodku w
-                Tbilisi, co pozwoliło mi spojrzeć na stomatologię z szerszej
-                perspektywy. W swojej praktyce kieruję się indywidualnym
-                podejściem do każdego pacjenta tak, by zapewnić najwyższą jakość
-                leczenia zarówno u dzieci jak i dorosłych.
-              </p>
-
-              <p class="text-lg">
-                Lubię rozmawiać z pacjentami i chętnie tłumaczę przebieg
-                leczenia. Swoją pracę wykonuję z dużym zaangażowaniem.
-              </p>
-
-              <p class="text-lg">
-                Należę do Polskiego Towarzystwa Ortodontycznego
-              </p>
-
-              <div class="h-6"></div>
-<!--
-          <p class="text-lg">
-            Obecnie realizuję program <strong class="text-gray-900">Master of Clinical Orthodontics</strong>,
-            stale pogłębiając swoje kompetencje kliniczne w ortodoncji, aby zapewniać Pacjentom
-            leczenie na najwyższym poziomie.
+            Oferuję szeroki zakres usług: prowadzę indywidualną edukację przedporodową,
+            wykonuję wizyty patronażowe, wspieram w karmieniu piersią, uczę bezpiecznego noszenia dzieci,
+            a także pomagam w powrocie do zdrowia po porodzie.
           </p>
--->
-            </p>
+
+          <p class="text-lg">
+            Stale poszerzam swoją wiedzę uczestnicząc w szkoleniach i kursach, aby jak najlepiej
+            wspierać kobiety i ich rodziny. W swojej praktyce kieruję się empatią, szacunkiem i
+            opartym na aktualnej wiedzy medycznej podejściem do opieki okołoporodowej.
+          </p>
+
+          <p class="text-lg">
+            Swoją pracę wykonuję z sercem i zaangażowaniem, bo wiem jak ważne są pierwsze dni i
+            tygodnie życia dziecka oraz wsparcie dla kobiety w okresie okołoporodowym.
           </p>
         </div>
       </div>
@@ -161,10 +157,10 @@ const base = import.meta.env.BASE_URL;
               class="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-300 text-center md:text-left"
             >
               <div
-                class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-6 mx-auto md:mx-0"
+                class="w-16 h-16 bg-rose-100 rounded-full flex items-center justify-center mb-6 mx-auto md:mx-0"
               >
                 <svg
-                  class="w-8 h-8 text-blue-600"
+                  class="w-8 h-8 text-rose-500"
                   fill="none"
                   stroke="currentColor"
                   viewBox="0 0 24 24"
@@ -173,17 +169,16 @@ const base = import.meta.env.BASE_URL;
                     stroke-linecap="round"
                     stroke-linejoin="round"
                     stroke-width="2"
-                    d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"
+                    d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"
                   ></path>
                 </svg>
               </div>
               <h3 class="text-2xl font-bold mb-4 text-gray-900">
-                Ortodoncja dziecięca
+                Edukacja przedporodowa
               </h3>
               <p class="text-gray-600">
-                Specjalistyczne leczenie ortodontyczne dla dzieci z
-                wykorzystaniem nowoczesnych metod i aparatów dostosowanych do
-                najmłodszych pacjentów.
+                Indywidualne przygotowanie do porodu i rodzicielstwa. Wsparcie w naturalnym
+                przygotowaniu do narodzin dziecka, omówienie przebiegu ciąży, porodu i połogu.
               </p>
             </div>
 
@@ -192,10 +187,10 @@ const base = import.meta.env.BASE_URL;
               class="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-300 text-center md:text-left"
             >
               <div
-                class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-6 mx-auto md:mx-0"
+                class="w-16 h-16 bg-rose-100 rounded-full flex items-center justify-center mb-6 mx-auto md:mx-0"
               >
                 <svg
-                  class="w-8 h-8 text-blue-600"
+                  class="w-8 h-8 text-rose-500"
                   fill="none"
                   stroke="currentColor"
                   viewBox="0 0 24 24"
@@ -204,16 +199,16 @@ const base = import.meta.env.BASE_URL;
                     stroke-linecap="round"
                     stroke-linejoin="round"
                     stroke-width="2"
-                    d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                    d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"
+                  ></path>
                 </svg>
               </div>
               <h3 class="text-2xl font-bold mb-4 text-gray-900">
-                Aparaty stałe i ruchome
+                Wsparcie laktacyjne
               </h3>
               <p class="text-gray-600">
-                Kompleksowe leczenie z użyciem aparatów stałych
-                samoligaturujących oraz różnych typów aparatów ruchomych
-                dostosowanych do indywidualnych potrzeb.
+                Profesjonalne doradztwo w zakresie karmienia piersią. Pomoc w rozwiązywaniu
+                problemów z laktacją, nauka prawidłowego przystawiania oraz wsparcie w naturalnym karmieniu.
               </p>
             </div>
 
@@ -222,10 +217,10 @@ const base = import.meta.env.BASE_URL;
               class="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-300 text-center md:text-left"
             >
               <div
-                class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-6 mx-auto md:mx-0"
+                class="w-16 h-16 bg-rose-100 rounded-full flex items-center justify-center mb-6 mx-auto md:mx-0"
               >
                 <svg
-                  class="w-8 h-8 text-blue-600"
+                  class="w-8 h-8 text-rose-500"
                   fill="none"
                   stroke="currentColor"
                   viewBox="0 0 24 24"
@@ -234,16 +229,16 @@ const base = import.meta.env.BASE_URL;
                     stroke-linecap="round"
                     stroke-linejoin="round"
                     stroke-width="2"
-                    d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"
+                    d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"
                   ></path>
                 </svg>
               </div>
               <h3 class="text-2xl font-bold mb-4 text-gray-900">
-                Alignery - aparaty nakładkowe
+                Wizyty patronażowe
               </h3>
               <p class="text-gray-600">
-                Nowoczesne, niemal niewidoczne aparaty nakładkowe - dyskretna
-                alternatywa dla tradycyjnych aparatów ortodontycznych.
+                Opieka nad mamą i dzieckiem w domu po porodzie. Kontrola stanu zdrowia noworodka,
+                wsparcie w codziennej pielęgnacji, edukacja w zakresie pielęgnacji i karmienia.
               </p>
             </div>
           </div>
@@ -256,140 +251,106 @@ const base = import.meta.env.BASE_URL;
       <div class="max-w-4xl mx-auto">
         <h2 class="text-4xl font-bold text-center mb-6 text-gray-900">Cennik</h2>
         <p class="text-center text-gray-600 mb-12 text-lg">
-          Przejrzyste ceny usług ortodontycznych
+          Przejrzyste ceny usług położniczych
         </p>
 
         <div class="space-y-8">
-          <!-- Konsultacja i diagnostyka -->
+          <!-- Konsultacje -->
           <div class="bg-white rounded-xl shadow-lg overflow-hidden">
-            <div class="bg-gradient-to-r from-blue-600 to-indigo-600 px-6 py-4">
-              <h3 class="text-2xl font-bold text-white">Konsultacja i diagnostyka</h3>
+            <div class="bg-gradient-to-r from-rose-400 to-pink-500 px-6 py-4">
+              <h3 class="text-2xl font-bold text-white">Konsultacje</h3>
             </div>
             <div class="p-6">
               <ul class="space-y-4">
                 <li class="flex justify-between items-center pb-4 border-b border-gray-200">
-                  <span class="text-gray-700 text-lg">Konsultacja ortodontyczna</span>
-                  <span class="text-blue-600 font-bold text-lg whitespace-nowrap">200 zł</span>
+                  <span class="text-gray-700 text-lg">Konsultacja położnicza</span>
+                  <span class="text-rose-600 font-bold text-lg whitespace-nowrap">od 100 zł</span>
                 </li>
                 <li class="flex justify-between items-center pb-4 border-b border-gray-200">
-                  <span class="text-gray-700 text-lg">Diagnostyka (skany, fotografie diagnostyczne)</span>
-                  <span class="text-blue-600 font-bold text-lg whitespace-nowrap">400 zł</span>
+                  <span class="text-gray-700 text-lg">Konsultacja online</span>
+                  <span class="text-rose-600 font-bold text-lg whitespace-nowrap">od 80 zł</span>
                 </li>
                 <li class="flex justify-between items-center">
-                  <span class="text-gray-700 text-lg">Przygotowanie planu leczenia z analizą cefalometryczną</span>
-                  <span class="text-blue-600 font-bold text-lg whitespace-nowrap">150 zł</span>
+                  <span class="text-gray-700 text-lg">Konsultacja laktacyjna</span>
+                  <span class="text-rose-600 font-bold text-lg whitespace-nowrap">od 100 zł</span>
                 </li>
               </ul>
             </div>
           </div>
 
-          <!-- Aparaty ruchome -->
+          <!-- Wizyty domowe -->
           <div class="bg-white rounded-xl shadow-lg overflow-hidden">
-            <div class="bg-gradient-to-r from-blue-600 to-indigo-600 px-6 py-4">
-              <h3 class="text-2xl font-bold text-white">Aparaty ruchome</h3>
+            <div class="bg-gradient-to-r from-rose-400 to-pink-500 px-6 py-4">
+              <h3 class="text-2xl font-bold text-white">Wizyty domowe</h3>
             </div>
             <div class="p-6">
               <ul class="space-y-4">
                 <li class="flex justify-between items-center pb-4 border-b border-gray-200">
-                  <span class="text-gray-700 text-lg">Aparat ruchomy</span>
-                  <span class="text-blue-600 font-bold text-lg whitespace-nowrap">od 1000 zł</span>
-                </li>
-                <li class="flex justify-between items-center pb-4 border-b border-gray-200">
-                  <span class="text-gray-700 text-lg">Twin block</span>
-                  <span class="text-blue-600 font-bold text-lg whitespace-nowrap">1800 zł</span>
-                </li>
-                <li class="flex justify-between items-center pb-4 border-b border-gray-200">
-                  <span class="text-gray-700 text-lg">Hyrax</span>
-                  <span class="text-blue-600 font-bold text-lg whitespace-nowrap">1900 zł</span>
-                </li>
-                <li class="flex justify-between items-center pb-4 border-b border-gray-200">
-                  <span class="text-gray-700 text-lg">Marco Rosa</span>
-                  <span class="text-blue-600 font-bold text-lg whitespace-nowrap">2000 zł</span>
+                  <span class="text-gray-700 text-lg">Wizyta patronażowa</span>
+                  <span class="text-rose-600 font-bold text-lg whitespace-nowrap">od 200 zł</span>
                 </li>
                 <li class="flex justify-between items-center">
-                  <span class="text-gray-700 text-lg">Maska twarzowa</span>
-                  <span class="text-blue-600 font-bold text-lg whitespace-nowrap">500 zł</span>
+                  <span class="text-gray-700 text-lg">Wizyta domowa laktacyjna</span>
+                  <span class="text-rose-600 font-bold text-lg whitespace-nowrap">od 200 zł</span>
                 </li>
               </ul>
             </div>
           </div>
 
-          <!-- Aparaty stałe -->
+          <!-- Edukacja przedporodowa -->
           <div class="bg-white rounded-xl shadow-lg overflow-hidden">
-            <div class="bg-gradient-to-r from-blue-600 to-indigo-600 px-6 py-4">
-              <h3 class="text-2xl font-bold text-white">Aparaty stałe</h3>
-            </div>
-            <div class="p-6">
-              <ul class="space-y-4">
-                <li class="flex justify-between items-center">
-                  <span class="text-gray-700 text-lg">Aparat stały samoligaturujący 1 łuk</span>
-                  <span class="text-blue-600 font-bold text-lg whitespace-nowrap">3000 zł</span>
-                </li>
-              </ul>
-            </div>
-          </div>
-
-          <!-- Wizyty kontrolne -->
-          <div class="bg-white rounded-xl shadow-lg overflow-hidden">
-            <div class="bg-gradient-to-r from-blue-600 to-indigo-600 px-6 py-4">
-              <h3 class="text-2xl font-bold text-white">Wizyty kontrolne</h3>
+            <div class="bg-gradient-to-r from-rose-400 to-pink-500 px-6 py-4">
+              <h3 class="text-2xl font-bold text-white">Edukacja przedporodowa</h3>
             </div>
             <div class="p-6">
               <ul class="space-y-4">
                 <li class="flex justify-between items-center pb-4 border-b border-gray-200">
-                  <span class="text-gray-700 text-lg">Wizyta kontrolna - aparat ruchomy</span>
-                  <span class="text-blue-600 font-bold text-lg whitespace-nowrap">150 zł</span>
+                  <span class="text-gray-700 text-lg">Indywidualna edukacja przedporodowa (pakiet)</span>
+                  <span class="text-rose-600 font-bold text-lg whitespace-nowrap">Wycena indywidualna</span>
+                </li>
+                <li class="flex justify-between items-center">
+                  <span class="text-gray-700 text-lg">Szkoła rodzenia online</span>
+                  <span class="text-rose-600 font-bold text-lg whitespace-nowrap">Wycena indywidualna</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Dodatkowe usługi -->
+          <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+            <div class="bg-gradient-to-r from-rose-400 to-pink-500 px-6 py-4">
+              <h3 class="text-2xl font-bold text-white">Dodatkowe usługi</h3>
+            </div>
+            <div class="p-6">
+              <ul class="space-y-4">
+                <li class="flex justify-between items-center pb-4 border-b border-gray-200">
+                  <span class="text-gray-700 text-lg">KTG (kardiotokografia)</span>
+                  <span class="text-rose-600 font-bold text-lg whitespace-nowrap">Wycena indywidualna</span>
                 </li>
                 <li class="flex justify-between items-center pb-4 border-b border-gray-200">
-                  <span class="text-gray-700 text-lg">Wizyta kontrolna - aparat stały 1 łuk</span>
-                  <span class="text-blue-600 font-bold text-lg whitespace-nowrap">250 zł</span>
+                  <span class="text-gray-700 text-lg">Pomiar bilirubiny</span>
+                  <span class="text-rose-600 font-bold text-lg whitespace-nowrap">Wycena indywidualna</span>
+                </li>
+                <li class="flex justify-between items-center pb-4 border-b border-gray-200">
+                  <span class="text-gray-700 text-lg">Wypożyczalnia laktatorów</span>
+                  <span class="text-rose-600 font-bold text-lg whitespace-nowrap">Wycena indywidualna</span>
                 </li>
                 <li class="flex justify-between items-center">
-                  <span class="text-gray-700 text-lg">Wizyta kontrolna - aparat stały 2 łuki</span>
-                  <span class="text-blue-600 font-bold text-lg whitespace-nowrap">300 zł</span>
-                </li>
-              </ul>
-            </div>
-          </div>
-
-          <!-- Zakończenie leczenia -->
-          <div class="bg-white rounded-xl shadow-lg overflow-hidden">
-            <div class="bg-gradient-to-r from-blue-600 to-indigo-600 px-6 py-4">
-              <h3 class="text-2xl font-bold text-white">Zakończenie leczenia</h3>
-            </div>
-            <div class="p-6">
-              <ul class="space-y-4">
-                <li class="flex justify-between items-center">
-                  <span class="text-gray-700 text-lg">Demontaż aparatu wraz z aparatami retencyjnymi</span>
-                  <span class="text-blue-600 font-bold text-lg whitespace-nowrap">1200 zł</span>
-                </li>
-              </ul>
-            </div>
-          </div>
-
-          <!-- Alignery -->
-          <div class="bg-white rounded-xl shadow-lg overflow-hidden">
-            <div class="bg-gradient-to-r from-blue-600 to-indigo-600 px-6 py-4">
-              <h3 class="text-2xl font-bold text-white">Alignery</h3>
-            </div>
-            <div class="p-6">
-              <ul class="space-y-4">
-                <li class="flex justify-between items-center">
-                  <span class="text-gray-700 text-lg">Alignery - aparaty nakładkowe</span>
-                  <span class="text-blue-600 font-bold text-lg whitespace-nowrap">Wycena indywidualna</span>
+                  <span class="text-gray-700 text-lg">Nauka noszenia w chustach/nosidłach</span>
+                  <span class="text-rose-600 font-bold text-lg whitespace-nowrap">od 100 zł</span>
                 </li>
               </ul>
             </div>
           </div>
         </div>
 
-        <div class="mt-12 bg-blue-50 border-l-4 border-blue-600 p-6 rounded-r-xl">
+        <div class="mt-12 bg-rose-50 border-l-4 border-rose-500 p-6 rounded-r-xl">
           <h3 class="text-xl font-bold text-gray-900 mb-3 text-center md:text-left">Informacje dodatkowe</h3>
           <ul class="space-y-2 text-gray-700">
             <li>• Ceny podane są w złotych polskich (PLN)</li>
-            <li>• Pierwsza konsultacja ortodontyczna pozwala na ocenę sytuacji i zaproponowanie planu leczenia</li>
-            <li>• Wizyty kontrolne są niezbędne do monitorowania postępów leczenia</li>
-            <li>• Cena alignerów ustalana jest indywidualnie po konsultacji i diagnostyce</li>
+            <li>• Ceny mogą się różnić w zależności od odległości i zakresu usług</li>
+            <li>• Wizyty domowe obejmują dojazd w promieniu Połańca i okolic</li>
+            <li>• Możliwość ustalenia pakietów wizyt patronażowych</li>
             <li>• Podane ceny są wyłącznie orientacyjne i nie stanowią oferty handlowej w rozumieniu art. 66 § 1 Kodeksu Cywilnego.</li>
           </ul>
         </div>
@@ -402,12 +363,12 @@ const base = import.meta.env.BASE_URL;
     <div class="container mx-auto px-4">
       <div class="max-w-5xl mx-auto">
         <div class="text-center mb-10">
-          <h2 class="text-2xl font-semibold text-gray-900 mb-2">Opinie pacjentów</h2>
+          <h2 class="text-2xl font-semibold text-gray-900 mb-2">Opinie pacjentek</h2>
           <a
-            href="https://www.znanylekarz.pl/justyna-serafin/stomatolog-stomatolog-dzieciecy/debica#doctor-opinion-stats"
+            href="https://www.znanylekarz.pl/magdalena-golba/polozna/polaniec#profile-reviews"
             target="_blank"
             rel="noopener noreferrer"
-            class="text-sm text-blue-600 hover:text-blue-800 transition-colors"
+            class="text-sm text-rose-600 hover:text-rose-700 transition-colors"
           >
             Zobacz więcej na ZnanyLekarz.pl →
           </a>
@@ -416,43 +377,43 @@ const base = import.meta.env.BASE_URL;
         <div class="grid md:grid-cols-3 gap-6">
           <!-- Opinia 1 -->
           <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
-            <svg class="w-8 h-8 text-blue-200 mb-3" fill="currentColor" viewBox="0 0 24 24">
+            <svg class="w-8 h-8 text-rose-200 mb-3" fill="currentColor" viewBox="0 0 24 24">
               <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/>
             </svg>
             <p class="text-gray-600 text-sm leading-relaxed mb-4">
-              Byłam z moją dwuletnią córeczką na wizycie profilaktycznej u Pani Justyny i jestem bardzo zadowolona. Pani doktor ma świetne podejście do małych pacjentów – spokojnie wszystko tłumaczy, jest cierpliwa i uśmiechnięta. Zdecydowanie polecam!
+              Fantastyczna osoba, położna z powołaniem, z sercem dla pacjentki. Polecam jako merytoryczne wsparcie i specjalistkę (również laktacja, chustonoszenie), ale także gdy potrzebujesz zrozumienia. Serdecznie polecam!
             </p>
             <div class="flex items-center justify-between text-xs text-gray-400">
-              <span class="font-medium text-gray-700">Magdalena</span>
-              <span>wrzesień 2025</span>
+              <span class="font-medium text-gray-700">MZ</span>
+              <span>ZnanyLekarz</span>
             </div>
           </div>
 
           <!-- Opinia 2 -->
           <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
-            <svg class="w-8 h-8 text-blue-200 mb-3" fill="currentColor" viewBox="0 0 24 24">
+            <svg class="w-8 h-8 text-rose-200 mb-3" fill="currentColor" viewBox="0 0 24 24">
               <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/>
             </svg>
             <p class="text-gray-600 text-sm leading-relaxed mb-4">
-              Polecam. Zawsze byłem bardzo zadowolony. Na uwagę zasługuje zaangażowanie i szczegółowe wyjaśnianie poszczególnych procedur.
+              Pani Magda jest osobą bardzo zaangażowaną w to co robi, wszelkie informacje przekazuje w sposób jasny, spokojny i empatyczny, co bardzo cenię w kontakcie ze specjalistami. Konsultując jakikolwiek problem z Panią Magdą mam pewność że wykorzystuje ona wiedzę opartą o najnowsze badania.
             </p>
             <div class="flex items-center justify-between text-xs text-gray-400">
-              <span class="font-medium text-gray-700">MM</span>
-              <span>maj 2024</span>
+              <span class="font-medium text-gray-700">Katarzyna</span>
+              <span>ZnanyLekarz</span>
             </div>
           </div>
 
           <!-- Opinia 3 -->
           <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
-            <svg class="w-8 h-8 text-blue-200 mb-3" fill="currentColor" viewBox="0 0 24 24">
+            <svg class="w-8 h-8 text-rose-200 mb-3" fill="currentColor" viewBox="0 0 24 24">
               <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/>
             </svg>
             <p class="text-gray-600 text-sm leading-relaxed mb-4">
-              Wspaniała Pani Doktor, wszystko szczegółowo tłumaczy co robi oraz co należy zrobić jeśli ząb się psuje. Atmosfera w gabinecie przyjazna zarówno dorosłym jak i dzieciom. Bardzo polecam!
+              Z całego serca polecam panią Magdę. Zgłosiłam się do niej z bólem pojawiającym się w trakcie i po karmieniu piersią. Dzięki jej fachowej pomocy oraz trafnym wskazówkom udało się skutecznie zażegnać problem i uratować moje karmienie piersią. Pani Magda jest ciepłą, profesjonalną i bardzo wspierającą osobą.
             </p>
             <div class="flex items-center justify-between text-xs text-gray-400">
-              <span class="font-medium text-gray-700">Monika Lach</span>
-              <span>styczeń 2024</span>
+              <span class="font-medium text-gray-700">Weronika</span>
+              <span>ZnanyLekarz</span>
             </div>
           </div>
         </div>
@@ -469,12 +430,12 @@ const base = import.meta.env.BASE_URL;
 
           <div class="max-w-2xl mx-auto">
             <div
-              class="bg-gradient-to-br from-blue-50 to-indigo-50 p-8 rounded-xl shadow-lg"
+              class="bg-gradient-to-br from-rose-50 to-pink-50 p-8 rounded-xl shadow-lg"
             >
               <div class="space-y-6">
                 <div class="flex flex-col md:flex-row items-center md:items-start gap-4 text-center md:text-left">
                   <div
-                    class="w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center flex-shrink-0"
+                    class="w-12 h-12 bg-rose-500 rounded-full flex items-center justify-center flex-shrink-0"
                   >
                     <svg
                       class="w-6 h-6 text-white"
@@ -493,19 +454,19 @@ const base = import.meta.env.BASE_URL;
                   <div>
                     <h3 class="text-xl font-bold text-gray-900 mb-2">Email</h3>
                     <a
-                      href="mailto:justynadserafin@gmail.com"
+                      href="mailto:magda@medi3.pl"
                       target="_blank"
                       rel="noopener noreferrer"
-                      class="text-blue-600 hover:text-blue-800"
+                      class="text-rose-600 hover:text-rose-700"
                     >
-                      justynadserafin@gmail.com
+                      magda@medi3.pl
                     </a>
                   </div>
                 </div>
 
                 <div class="flex flex-col md:flex-row items-center md:items-start gap-4 text-center md:text-left">
                   <div
-                    class="w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center flex-shrink-0"
+                    class="w-12 h-12 bg-rose-500 rounded-full flex items-center justify-center flex-shrink-0"
                   >
                     <svg
                       class="w-6 h-6 text-white"
@@ -526,19 +487,19 @@ const base = import.meta.env.BASE_URL;
                       Telefon
                     </h3>
                     <a
-                      href="tel:+48791728349"
+                      href="tel:+48690465596"
                       target="_blank"
                       rel="noopener noreferrer"
-                      class="text-blue-600 hover:text-blue-800"
+                      class="text-rose-600 hover:text-rose-700"
                     >
-                      +48 791 728 349
+                      +48 690 465 596
                     </a>
                   </div>
                 </div>
 
                 <div class="flex flex-col md:flex-row items-center md:items-start gap-4 text-center md:text-left">
                   <div
-                    class="w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center flex-shrink-0"
+                    class="w-12 h-12 bg-rose-500 rounded-full flex items-center justify-center flex-shrink-0"
                   >
                     <svg
                       class="w-6 h-6 text-white"
@@ -561,39 +522,30 @@ const base = import.meta.env.BASE_URL;
                   </div>
                   <div>
                     <h3 class="text-xl font-bold text-gray-900 mb-2">
-                      Gabinet
+                      Lokalizacja
                     </h3>
                     <a
-                      href="https://www.google.com/maps/search/?api=1&query=ul.+Wolno%C5%9Bci+23B+lok.+64%2C+Mielec"
+                      href="https://www.google.com/maps/search/?api=1&query=50.425663,21.2878838"
                       target="_blank"
                       rel="noopener noreferrer"
-                      class="text-blue-600 hover:text-blue-800"
+                      class="text-rose-600 hover:text-rose-700"
                     >
-                      ul. Wolności 23B lok. 64, Mielec
+                      Połaniec i okolice
                     </a>
-                    <p class="text-gray-600 text-sm mb-2">
-                      Przyjmuję w gabinecie Primadentis
+                    <p class="text-gray-600 text-sm mt-2">
+                      Wizyty domowe w Połańcu oraz okolicach
                     </p>
-                    <a
-                      href="https://primadentis.pl"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      class="text-blue-600 hover:text-blue-800 font-medium"
-                    >
-                      primadentis.pl →
-                    </a>
                   </div>
                 </div>
 
-                <div class="mt-8 pt-8 border-t border-blue-200">
+                <div class="mt-8 pt-8 border-t border-rose-200">
                   <p class="text-center text-gray-700">
-                    Umów się na konsultację ortodontyczną i poznaj możliwości
-                    leczenia
+                    Umów się na konsultację położniczą i otrzymaj profesjonalne wsparcie
                   </p>
                   <div class="mt-4 text-center">
                     <a
                       href="#cennik"
-                      class="inline-block bg-blue-600 text-white px-8 py-3 rounded-lg hover:bg-blue-700 transition-colors duration-300"
+                      class="inline-block bg-rose-500 text-white px-8 py-3 rounded-lg hover:bg-rose-600 transition-colors duration-300"
                     >
                       Zobacz cennik
                     </a>
