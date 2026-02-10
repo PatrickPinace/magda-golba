@@ -102,16 +102,16 @@ const base = import.meta.env.BASE_URL;
           <!-- Content - Takes 3 columns -->
           <div class="md:col-span-3 space-y-8 about-content">
             <div>
-              <h2 class="text-5xl font-bold mb-6 text-gray-900">
+              <h2 class="text-5xl font-bold mb-6 text-gray-900 text-center">
                 O mnie
               </h2>
               <p class="text-xl text-rose-600 font-light mb-8">
-                Położna z powołaniem, wspierająca rodziny z sercem
+                Położna z powołaniem i z sercem wspierająca rodziny.
               </p>
             </div>
 
             <div class="prose prose-lg max-w-none">
-              <p class="text-gray-700 leading-relaxed">
+              <p class="text-gray-700 leading-relaxed text-justify md:text-left">
                 Jestem położną z pasją do swojej pracy. Towarzyszę kobietom w jednym z najważniejszych
                 okresów ich życia - od ciąży, przez poród, po pierwsze miesiące macierzyństwa.
               </p>
@@ -122,14 +122,14 @@ const base = import.meta.env.BASE_URL;
                 </p>
               </div>
 
-              <p class="text-gray-700 leading-relaxed">
+              <p class="text-gray-700 leading-relaxed text-justify md:text-left">
                 W swojej pracy łączę wiedzę medyczną z indywidualnym podejściem do każdej pacjentki.
                 Jestem <strong class="text-rose-600">Certyfikowanym Doradcą Laktacyjnym</strong> oraz
                 <strong class="text-rose-600">Certyfikowanym Doradcą Noszenia w Chustach</strong>, co pozwala mi kompleksowo
                 wspierać młode mamy w pierwszych tygodniach i miesiącach życia ich dzieci.
               </p>
 
-              <div class="grid grid-cols-2 gap-4 my-8">
+              <div class="grid grid-cols-2 gap-4 my-8 text-center">
                 <div class="bg-white p-4 rounded-xl shadow-md border border-rose-100">
                   <div class="text-3xl font-bold text-rose-600 mb-1">10+</div>
                   <div class="text-sm text-gray-600">Lat doświadczenia</div>
@@ -140,17 +140,24 @@ const base = import.meta.env.BASE_URL;
                 </div>
               </div>
 
-              <p class="text-gray-700 leading-relaxed">
+              <p class="text-gray-700 leading-relaxed text-justify md:text-left">
                 Oferuję szeroki zakres usług: prowadzę indywidualną edukację przedporodową,
                 wykonuję wizyty patronażowe, wspieram w karmieniu piersią, uczę bezpiecznego noszenia dzieci,
                 a także pomagam w powrocie do zdrowia po porodzie.
               </p>
 
-              <p class="text-gray-700 leading-relaxed">
+              <p class="text-gray-700 leading-relaxed text-justify md:text-left">
                 Stale poszerzam swoją wiedzę uczestnicząc w szkoleniach i kursach, aby jak najlepiej
                 wspierać kobiety i ich rodziny. W swojej praktyce kieruję się empatią, szacunkiem i
                 opartym na aktualnej wiedzy medycznej podejściem do opieki okołoporodowej.
               </p>
+
+              <div class="mt-8 p-6 bg-gradient-to-r from-rose-50 to-pink-50 rounded-2xl border border-rose-200">
+                <p class="text-gray-700 leading-relaxed">
+                  Współpracuję z <a href="https://medi3.pl" target="_blank" rel="noopener noreferrer" class="text-rose-600 font-semibold hover:text-rose-700 transition-colors">Fundacją Medi3</a>,
+                  która wspiera rozwój opieki medycznej i edukacji zdrowotnej w Polsce.
+                </p>
+              </div>
             </div>
           </div>
         </div>
@@ -306,21 +313,6 @@ const base = import.meta.env.BASE_URL;
     </div>
   </section>
 
-  <!-- Testimonial Quote 1 -->
-  <section class="py-16 bg-gradient-to-r from-rose-50 to-pink-50">
-    <div class="container mx-auto px-4">
-      <div class="max-w-4xl mx-auto text-center">
-        <svg class="w-12 h-12 text-rose-300 mx-auto mb-6" fill="currentColor" viewBox="0 0 24 24">
-          <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/>
-        </svg>
-        <p class="text-2xl md:text-3xl text-gray-800 font-light italic mb-6 leading-relaxed">
-          Fantastyczna osoba, położna z powołaniem, z sercem dla pacjentki. Polecam jako merytoryczne wsparcie i specjalistkę.
-        </p>
-        <p class="text-rose-600 font-medium">— MZ, pacjentka</p>
-      </div>
-    </div>
-  </section>
-
   <!-- Cennik Section - 3 Column Cards -->
   <section id="cennik" class="py-24 bg-gradient-to-b from-rose-50/20 to-white scroll-mt-24">
     <div class="container mx-auto px-4">
@@ -342,8 +334,8 @@ const base = import.meta.env.BASE_URL;
               </div>
               <h3 class="text-2xl font-bold text-white">Konsultacje</h3>
             </div>
-            <div class="p-6 space-y-4">
-              <div class="flex items-start gap-3">
+            <div class="p-6 space-y-4 text-center md:text-left">
+              <div class="flex flex-col md:flex-row items-center md:items-start gap-3">
                 <div class="w-6 h-6 rounded-full bg-rose-100 flex items-center justify-center flex-shrink-0 mt-0.5">
                   <svg class="w-3 h-3 text-rose-600" fill="currentColor" viewBox="0 0 20 20">
                     <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
@@ -354,7 +346,7 @@ const base = import.meta.env.BASE_URL;
                   <p class="text-rose-600 font-bold text-lg">od 100 zł</p>
                 </div>
               </div>
-              <div class="flex items-start gap-3">
+              <div class="flex flex-col md:flex-row items-center md:items-start gap-3">
                 <div class="w-6 h-6 rounded-full bg-rose-100 flex items-center justify-center flex-shrink-0 mt-0.5">
                   <svg class="w-3 h-3 text-rose-600" fill="currentColor" viewBox="0 0 20 20">
                     <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
@@ -365,7 +357,7 @@ const base = import.meta.env.BASE_URL;
                   <p class="text-rose-600 font-bold text-lg">od 80 zł</p>
                 </div>
               </div>
-              <div class="flex items-start gap-3">
+              <div class="flex flex-col md:flex-row items-center md:items-start gap-3">
                 <div class="w-6 h-6 rounded-full bg-rose-100 flex items-center justify-center flex-shrink-0 mt-0.5">
                   <svg class="w-3 h-3 text-rose-600" fill="currentColor" viewBox="0 0 20 20">
                     <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
@@ -389,8 +381,8 @@ const base = import.meta.env.BASE_URL;
               </div>
               <h3 class="text-2xl font-bold text-white">Wizyty domowe</h3>
             </div>
-            <div class="p-6 space-y-4">
-              <div class="flex items-start gap-3">
+            <div class="p-6 space-y-4 text-center md:text-left">
+              <div class="flex flex-col md:flex-row items-center md:items-start gap-3">
                 <div class="w-6 h-6 rounded-full bg-rose-100 flex items-center justify-center flex-shrink-0 mt-0.5">
                   <svg class="w-3 h-3 text-rose-600" fill="currentColor" viewBox="0 0 20 20">
                     <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
@@ -401,7 +393,7 @@ const base = import.meta.env.BASE_URL;
                   <p class="text-rose-600 font-bold text-lg">od 200 zł</p>
                 </div>
               </div>
-              <div class="flex items-start gap-3">
+              <div class="flex flex-col md:flex-row items-center md:items-start gap-3">
                 <div class="w-6 h-6 rounded-full bg-rose-100 flex items-center justify-center flex-shrink-0 mt-0.5">
                   <svg class="w-3 h-3 text-rose-600" fill="currentColor" viewBox="0 0 20 20">
                     <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
@@ -412,7 +404,7 @@ const base = import.meta.env.BASE_URL;
                   <p class="text-rose-600 font-bold text-lg">od 200 zł</p>
                 </div>
               </div>
-              <div class="flex items-start gap-3">
+              <div class="flex flex-col md:flex-row items-center md:items-start gap-3">
                 <div class="w-6 h-6 rounded-full bg-rose-100 flex items-center justify-center flex-shrink-0 mt-0.5">
                   <svg class="w-3 h-3 text-rose-600" fill="currentColor" viewBox="0 0 20 20">
                     <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
@@ -436,8 +428,8 @@ const base = import.meta.env.BASE_URL;
               </div>
               <h3 class="text-2xl font-bold text-white">Dodatkowe usługi</h3>
             </div>
-            <div class="p-6 space-y-4">
-              <div class="flex items-start gap-3">
+            <div class="p-6 space-y-4 text-center md:text-left">
+              <div class="flex flex-col md:flex-row items-center md:items-start gap-3">
                 <div class="w-6 h-6 rounded-full bg-rose-100 flex items-center justify-center flex-shrink-0 mt-0.5">
                   <svg class="w-3 h-3 text-rose-600" fill="currentColor" viewBox="0 0 20 20">
                     <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
@@ -448,7 +440,7 @@ const base = import.meta.env.BASE_URL;
                   <p class="text-rose-600 font-bold text-lg">Indywidualnie</p>
                 </div>
               </div>
-              <div class="flex items-start gap-3">
+              <div class="flex flex-col md:flex-row items-center md:items-start gap-3">
                 <div class="w-6 h-6 rounded-full bg-rose-100 flex items-center justify-center flex-shrink-0 mt-0.5">
                   <svg class="w-3 h-3 text-rose-600" fill="currentColor" viewBox="0 0 20 20">
                     <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
@@ -514,7 +506,7 @@ const base = import.meta.env.BASE_URL;
   <!-- Testimonial Quote 2 -->
   <section id="opinie" class="py-20 bg-gradient-to-br from-pink-50 via-rose-50 to-white scroll-mt-24">
     <div class="container mx-auto px-4">
-      <div class="max-w-4xl mx-auto">
+      <div class="max-w-6xl mx-auto">
         <div class="text-center mb-12">
           <h2 class="text-4xl font-bold text-gray-900 mb-3">Co mówią pacjentki</h2>
           <a
@@ -530,16 +522,44 @@ const base = import.meta.env.BASE_URL;
           </a>
         </div>
 
-        <div class="bg-white p-8 md:p-12 rounded-3xl shadow-2xl border border-rose-100">
-          <svg class="w-16 h-16 text-rose-200 mx-auto mb-6" fill="currentColor" viewBox="0 0 24 24">
-            <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/>
-          </svg>
-          <p class="text-2xl md:text-3xl text-gray-800 font-light italic mb-8 leading-relaxed text-center">
-            Z całego serca polecam panią Magdę. Zgłosiłam się do niej z bólem pojawiającym się w trakcie i po karmieniu piersią. Dzięki jej fachowej pomocy oraz trafnym wskazówkom udało się skutecznie zażegnać problem i uratować moje karmienie piersią. Pani Magda jest ciepłą, profesjonalną i bardzo wspierającą osobą.
-          </p>
-          <div class="text-center">
-            <p class="text-rose-600 font-medium text-lg">— Weronika</p>
-            <p class="text-gray-500 text-sm">ZnanyLekarz.pl</p>
+        <div class="grid md:grid-cols-3 gap-8">
+          <!-- Opinia 1 -->
+          <div class="bg-white p-8 rounded-3xl shadow-2xl border border-rose-100 hover:shadow-rose-200/50 transition-shadow">
+            <svg class="w-12 h-12 text-rose-200 mb-6" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/>
+            </svg>
+            <p class="text-lg text-gray-700 mb-6 leading-relaxed">
+              Z całego serca polecam panią Magdę. Zgłosiłam się do niej z bólem pojawiającym się w trakcie i po karmieniu piersią. Dzięki jej fachowej pomocy oraz trafnym wskazówkom udało się skutecznie zażegnać problem i uratować moje karmienie piersią. Pani Magda jest ciepłą, profesjonalną i bardzo wspierającą osobą.
+            </p>
+            <div class="border-t border-rose-100 pt-4">
+              <p class="text-rose-600 font-medium">— Weronika</p>
+            </div>
+          </div>
+
+          <!-- Opinia 2 -->
+          <div class="bg-white p-8 rounded-3xl shadow-2xl border border-rose-100 hover:shadow-rose-200/50 transition-shadow">
+            <svg class="w-12 h-12 text-rose-200 mb-6" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/>
+            </svg>
+            <p class="text-lg text-gray-700 mb-6 leading-relaxed">
+              Fantastyczna osoba, położna z powołaniem, z sercem dla pacjentki. Polecam jako merytoryczne wsparcie i specjalistkę (również laktacja, chustonoszenie), ale także gdy potrzebujesz zrozumienia. Serdecznie polecam!
+            </p>
+            <div class="border-t border-rose-100 pt-4">
+              <p class="text-rose-600 font-medium">— MZ</p>
+            </div>
+          </div>
+
+          <!-- Opinia 3 -->
+          <div class="bg-white p-8 rounded-3xl shadow-2xl border border-rose-100 hover:shadow-rose-200/50 transition-shadow">
+            <svg class="w-12 h-12 text-rose-200 mb-6" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/>
+            </svg>
+            <p class="text-lg text-gray-700 mb-6 leading-relaxed">
+              Pani Magda jest osobą bardzo zaangażowaną w to co robi, wszelkie informacje przekazuje w sposób jasny, spokojny i empatyczny. Konsultując jakikolwiek problem z Panią Magdą mam pewność że wykorzystuje ona wiedzę opartą o najnowsze badania.
+            </p>
+            <div class="border-t border-rose-100 pt-4">
+              <p class="text-rose-600 font-medium">— Katarzyna</p>
+            </div>
           </div>
         </div>
       </div>
@@ -597,12 +617,25 @@ const base = import.meta.env.BASE_URL;
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
               </svg>
             </div>
-            <h3 class="text-xl font-bold text-gray-900 mb-2">Lokalizacja</h3>
-            <p class="text-rose-600 font-medium">Połaniec i okolice</p>
+            <h3 class="text-xl font-bold text-gray-900 mb-2">Gabinet</h3>
+            <p class="text-rose-600 font-medium mb-2">ul. Czarnieckiego 3</p>
+            <p class="text-gray-600 text-sm">Połaniec (Budynek Pizzeri Leo)</p>
+            <p class="text-gray-600 text-sm">I piętro</p>
           </a>
         </div>
 
-        <p class="text-gray-500 text-sm">
+        <div class="mt-12">
+          <a
+            href="https://docs.google.com/forms/d/e/1FAIpQLSc01x8QgCOvRHRxf7HueQH_3SY5vwkLneufvXkVJkiH63T8wQ/viewform"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="inline-block bg-gradient-to-r from-rose-500 to-pink-500 text-white px-12 py-4 rounded-full hover:from-rose-600 hover:to-pink-600 transition-all duration-300 shadow-lg hover:shadow-xl hover:-translate-y-0.5 font-medium text-lg"
+          >
+            Formularz do zapisów
+          </a>
+        </div>
+
+        <p class="text-gray-500 text-sm mt-8">
           Wizyty domowe w Połańcu oraz okolicach
         </p>
       </div>
